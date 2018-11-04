@@ -164,6 +164,8 @@ body:after {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	position: relative;
+	z-index: 9;
 }
 
 .recentwork{
@@ -285,5 +287,14 @@ input#name, input#email, textarea {
     padding-left: 5%;
     margin-top: 5%;
 }
+
+}
+
+
+
+
+#submit{
+
+cursor: pointer;
 
 }
