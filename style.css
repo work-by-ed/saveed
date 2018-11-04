@@ -244,6 +244,11 @@ audio {
 	z-index: 8;
 }
 
+.new-content {
+	display: flex;
+	justify-content: center;
+}
+
 
 @media only screen and (max-width: 500px) {
 body {
