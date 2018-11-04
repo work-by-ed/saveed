@@ -239,7 +239,10 @@ a:hover {
   }
 }
 
-
+audio {
+	position: relative;
+	z-index: 8;
+}
 
 
 @media only screen and (max-width: 500px) {
