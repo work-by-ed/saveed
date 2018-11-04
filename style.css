@@ -40,25 +40,16 @@ color: white;
 
 body{
 	background-color: #0f15b5;
+	overflow: hidden;
+	animation: blue-me 5ms infinite;
+	color: white;
+	background-color: #0f15b5;
 	font-family: 'Space Mono', monospace;
 }
 
-
-
-
-body{
-
-
-	background-color: #0f15b5;
-	overflow: hidden;
-	animation: blue-me 5ms infinite;
-}
-
-
-
 body:after {   
  box-shadow: inset 0 0 10em rgba(0,0,0,0.75);
- position: absolute;
+ position: fixed;
  top: 0;
  left: 0;
  width: 100%;
@@ -75,10 +66,6 @@ body:after {
 	35%{ background: #171DA8; }
 }
 
-
-
-
-
 @keyframes blur {
   0%   { filter: blur(1px); opacity:0.8;}
   50% { filter: blur(1px); opacity:1; }
@@ -93,8 +80,6 @@ body:after {
   31% { top:0; }
 }
 
-//From Greg Opperman
-//https://codepen.io/gopperman/pen/dElzr?editors=001
 @keyframes track {
 
   40% { 	opacity:1; 
@@ -120,7 +105,6 @@ body:after {
 
 
 
-//Lines
 .screen-bottom{
 	position: fixed;
 	bottom: 0;
@@ -176,30 +160,24 @@ body:after {
 
 
 
-
+.content-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
 
 .recentwork{
-
-	color: #fff;
-	margin-left: 20em;
-	margin-top: 10em;
+	margin: 5% 10% 0 0;
 }
 
-
-.recentwork2{
-
-	color: #fff;
-	margin-left: 40em;
-	margin-top: -15em;
+.contact-form {
+	margin-top: 5%;
 }
 
-
-/* unvisited link */
 a {
     color: #fff;
 }
 
-/* mouse over link */
 a:hover {
     color: #8300ff;
 }
@@ -256,7 +234,56 @@ a:hover {
     color: transparent;
   }
   50% {
-    color: white;
   }
 }
 
+
+
+
+@media only screen and (max-width: 500px) {
+body {
+	overflow: visible;
+} 
+
+.marq {
+	width: 60%;
+	font-size: 4em;
+}
+
+.marq2 {
+	width: 80%;
+	font-size: 3em;
+}
+
+.content-wrapper {
+	display: block;
+	width: 100%;
+}
+
+.recentwork {
+	margin-left: 5%;
+	font-size: 1.3em;
+}
+
+.contact-form {
+	width: 100%;
+}
+
+.contact-form h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.form-container {
+	text-align: center;
+}
+
+input#name, input#email, textarea {
+    width: 50%;
+    height: 50px;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+}
