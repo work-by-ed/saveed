@@ -249,6 +249,11 @@ audio {
 	justify-content: center;
 }
 
+.audio-title {
+	text-align: center;
+}
+
+
 
 @media only screen and (max-width: 500px) {
 body {
